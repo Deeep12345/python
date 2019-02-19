@@ -10,7 +10,7 @@ class Player(movements):
 
 	def drawPlayer(self,x,y):
 		if(ga[2*x+1][4*y+1]!="X" and ga[2*x+1][4*y+1]!="1"):
-				ga[2*x+1][4*y+1] = "B" 
+				ga[2*x+1][4*y+1] = "B" #for representing the movement of the player using B.
 				ga[2*x+1][4*y+2] = "B"
 				ga[2*x+1][4*y+3] = "B
 				ga[2*x+2][4*y+1] = "B" 
@@ -18,8 +18,8 @@ class Player(movements):
 				ga[2*x+2][4*y+3] = "B"
        return
 
-        def cp(self,x,y):
-             if(gameArray[2*x+1][4*y+1]=="X" or gameArray[2*x+1][4*y+1]=="1"
+        def cp(self,x,y): #for checking the position.
+             if(ga[2*x+1][4*y+1]=="X" or ga[2*x+1][4*y+1]=="1"
 	         return -1
              return 1
 		
