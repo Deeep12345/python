@@ -9,7 +9,7 @@ class board():
                     ga[i][j]="X"   # for the boundry walls or the unbreakable walls to be represented by X
                 elif (j<4 or j>26):
                     ga[i][j]="X"
-                elif((i>4 and i<17 and j<27 and j>8) and (i%4==1 or i%4==2)and (j%8==1 or j%8==2 or j%8==3 or j%8==4)):
+                elif((i>4 and i<17 and j<27 and j>8) and (i%4==1 or i%4==2)and (j%8==1 or j%8==2 or j%8==3)):
                     ga[i][j]="X"
                 else:
                     ga[i][j]="0" # for the movement to be done through 0.
