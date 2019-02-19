@@ -1,14 +1,21 @@
+from board import *
+from movements import *
+from bomb import *
+from wall import *
+
+
+
 pps=[1,1]
-class Player(Person):
+class Player(movements):
 
 	def drawPlayer(self,x,y):
-		if(gameArray[2*x+1][4*y+1]!="X" and gameArray[2*x+1][4*y+1]!="1"):
-				gameArray[2*x+1][4*y+1] = "B" 
-				gameArray[2*x+1][4*y+2] = "B"
-				gameArray[2*x+1][4*y+3] = "B
-				gameArray[2*x+2][4*y+1] = "B" 
-				gameArray[2*x+2][4*y+2] = "B"
-				gameArray[2*x+2][4*y+3] = "B"
+		if(ga[2*x+1][4*y+1]!="X" and ga[2*x+1][4*y+1]!="1"):
+				ga[2*x+1][4*y+1] = "B" 
+				ga[2*x+1][4*y+2] = "B"
+				ga[2*x+1][4*y+3] = "B
+				ga[2*x+2][4*y+1] = "B" 
+				ga[2*x+2][4*y+2] = "B"
+				ga[2*x+2][4*y+3] = "B"
        return
 
         def cp(self,x,y):
@@ -30,7 +37,7 @@ class Player(Person):
 	 	     pps[0] += 1
 	 	     self.drawPlayer(pps[0],pps[1])
 	 	else:
-	 	     print("lost live")
+	 	     print("lost live")# game is for one life only , so once lost means lost.
 		return
 		
 	 def moveUp(self):
