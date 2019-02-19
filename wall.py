@@ -26,4 +26,4 @@ class wall(Board):
 				ga[2*x+2][4*y+1] = "1"
 				ga[2*x+2][4*y+2] = "1"
 				ga[2*x+2][4*y+3] = "1"
-				#for wall to be represented by 1
+				#for breakable  wall to be represented by 1
